@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard.vue renders correctly 1`] = `
+<div
+  class="product-card"
+>
+  <img
+    alt="Camisa Nike Corinthians I"
+    src="https://via.placeholder.com/300x300"
+  />
+   
+  <span
+    class="product-card__title"
+  >
+    Camisa Nike Corinthians I
+  </span>
+   
+  <span
+    class="product-card__price"
+  >
+    R$ 229,90
+  </span>
+   
+  <wichlistbutton-stub
+    selected="true"
+  />
+   
+  <!---->
+</div>
+`;

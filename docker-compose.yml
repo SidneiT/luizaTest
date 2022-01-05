@@ -1,0 +1,20 @@
+version: "2"
+services:
+  front:
+    image: "node:14-slim"
+    user: "node"
+    working_dir: /home/node/app   
+    volumes:
+      - ./front/:/home/node/app    
+    ports:
+    - "8080:8080"
+    command: bash -c "npm install && npm run serve"
+  back:
+    image: "node:14-slim"
+    user: "node"
+    working_dir: /home/node/app   
+    volumes:
+      - ./bff/:/home/node/app    
+    ports:
+    - "3000:3000"
+    command: bash -c "npm install && npm start"
